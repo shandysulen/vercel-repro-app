@@ -23,6 +23,15 @@ dependencies:
   '@datadog/datadog-api-client':
     specifier: ^1.27.0
     version: 1.29.0
+  '@f8n/f8n-contracts':
+    specifier: 3.3.0
+    version: 3.3.0(typescript@5.3.3)(zod@3.23.8)
+  '@f8n/icons':
+    specifier: ^0.8.4
+    version: 0.8.4(react-dom@18.3.1)(react@18.3.1)
+  '@f8n/tokens':
+    specifier: ^0.1.3
+    version: 0.1.5
   '@farcaster/core':
     specifier: 0.7.2
     version: 0.7.2(typescript@5.3.3)(zod@3.23.8)
@@ -3463,6 +3472,29 @@ packages:
       '@ethersproject/logger': 5.7.0
       '@ethersproject/properties': 5.7.0
       '@ethersproject/strings': 5.7.0
+    dev: false
+
+  /@f8n/f8n-contracts@3.3.0(typescript@5.3.3)(zod@3.23.8):
+    resolution: {integrity: sha512-t8pRcrASEslBhhIiy2D0jJlzZJDoNooqvTnvNxLWktiWe0i1DS69bUCcySDzMk/gUSYbGfFWQ6a3xNWHCUuBzg==}
+    dependencies:
+      abitype: 1.0.2(typescript@5.3.3)(zod@3.23.8)
+    transitivePeerDependencies:
+      - typescript
+      - zod
+    dev: false
+
+  /@f8n/icons@0.8.4(react-dom@18.3.1)(react@18.3.1):
+    resolution: {integrity: sha512-PWnVX40j4vrhk98Y2NLIg2WK04x8HtxsKO4gcL7cWmD+29NRqooWR3+eWowsRZ0Id0/++WTMRY6iDC4iCpLu1A==}
+    peerDependencies:
+      react: ^17.0.0
+      react-dom: ^17.0.0
+    dependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+    dev: false
+
+  /@f8n/tokens@0.1.5:
+    resolution: {integrity: sha512-ZPQ3pNl9EL3cxWBjvQy2mcK9oz46VQ5W7kIQQHcGQaCLFii1QRYVnBlqXo9nfCeiJGdv7oII4L+ZQ7iPArEeSQ==}
     dev: false
 
   /@faker-js/faker@7.6.0:
@@ -12555,6 +12587,21 @@ packages:
       typescript: '>=5.0.4'
       zod: ^3 >=3.19.1
     peerDependenciesMeta:
+      zod:
+        optional: true
+    dependencies:
+      typescript: 5.3.3
+      zod: 3.23.8
+    dev: false
+
+  /abitype@1.0.2(typescript@5.3.3)(zod@3.23.8):
+    resolution: {integrity: sha512-aFt4k2H+eiAKy/zxtnORa9iIb10BMBeWL18l8v4+QuwYEBXPxxjSB1bFZCzQmKPoj8m7j68K705l3uY+E2gAjg==}
+    peerDependencies:
+      typescript: '>=5.0.4'
+      zod: ^3 >=3.22.0
+    peerDependenciesMeta:
+      typescript:
+        optional: true
       zod:
         optional: true
     dependencies:
