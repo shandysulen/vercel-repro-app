@@ -1,14 +1,3 @@
-import {
-  breakpoints,
-  sizes,
-  motion,
-  typography,
-  toPx,
-  onGridPx,
-  toMs,
-  colors,
-  transitions,
-} from "@f8n/tokens";
 import { defineConfig } from "@pandacss/dev";
 
 import { GLOBAL_NAV_HEIGHT } from "@/constants";
@@ -77,20 +66,20 @@ export default defineConfig({
       //   styledRemixIcon: styledRemixIconRecipe,
       // },
       keyframes: {
-        fadeInDown: {
-          from: { transform: "translateY(0)", opacity: 1 },
-          to: {
-            transform: `translateY(${onGridPx(4)})`,
-            opacity: 0,
-          },
-        },
-        fadeInUp: {
-          from: {
-            transform: `translateY(${onGridPx(4)})`,
-            opacity: 0,
-          },
-          to: { transform: "translateY(0)", opacity: 1 },
-        },
+        // fadeInDown: {
+        //   from: { transform: "translateY(0)", opacity: 1 },
+        //   to: {
+        //     transform: `translateY(${onGridPx(4)})`,
+        //     opacity: 0,
+        //   },
+        // },
+        // fadeInUp: {
+        //   from: {
+        //     transform: `translateY(${onGridPx(4)})`,
+        //     opacity: 0,
+        //   },
+        //   to: { transform: "translateY(0)", opacity: 1 },
+        // },
         blink: {
           "0%": { opacity: 1 },
           "49%": { opacity: 1 },
@@ -143,82 +132,82 @@ export default defineConfig({
           to: { strokeDashoffset: 0 },
         },
       },
-      breakpoints: {
-        sm: `${breakpoints[0]}px`, // 640
-        md: `${breakpoints[1]}px`, // 832
-        lg: `${breakpoints[2]}px`, // 1024
-        xl: `${breakpoints[3]}px`, // 1152
-        "2xl": `${breakpoints[4]}px`, // 1280
-        "3xl": `${breakpoints[5]}px`, // 1477
-        "4xl": `1600px`, // 1600
-      },
+      // breakpoints: {
+      //   sm: `${breakpoints[0]}px`, // 640
+      //   md: `${breakpoints[1]}px`, // 832
+      //   lg: `${breakpoints[2]}px`, // 1024
+      //   xl: `${breakpoints[3]}px`, // 1152
+      //   "2xl": `${breakpoints[4]}px`, // 1280
+      //   "3xl": `${breakpoints[5]}px`, // 1477
+      //   "4xl": `1600px`, // 1600
+      // },
       tokens: {
         fontWeights: {
           regular: { value: 400 },
           medium: { value: 500 },
           semibold: { value: 600 },
         },
-        letterSpacings: {
-          mono: { value: "0.0725em" },
-          [-1]: { value: `${typography.letterSpacings[-1] / 100}em` },
-          [-2]: { value: `${typography.letterSpacings[-2] / 100}em` },
-          [-3]: { value: `${typography.letterSpacings[-3] / 100}em` },
-          0: { value: `${typography.letterSpacings[0] / 100}em` },
-          [1]: { value: `${typography.letterSpacings[1] / 100}em` },
-          [2]: { value: `${typography.letterSpacings[2] / 100}em` },
-          [3]: { value: `${typography.letterSpacings[3] / 100}em` },
-        },
-        lineHeights: {
-          0: { value: typography.lineHeights[0] },
-          1: { value: typography.lineHeights[1] },
-          2: { value: typography.lineHeights[2] },
-          3: { value: typography.lineHeights[3] },
-          formElement0: { value: `${sizes.formElementHeights[0]}px` },
-          formElement1: { value: `${sizes.formElementHeights[1]}px` },
-          formElement2: { value: `${sizes.formElementHeights[2]}px` },
-        },
-        radii: {
-          0: { value: "0px" },
-          1: { value: onGridPx(1) },
-          2: { value: onGridPx(2) },
-          3: { value: onGridPx(3) },
-          4: { value: onGridPx(4) },
-          5: { value: onGridPx(5) },
-          6: { value: onGridPx(6) },
-          round: { value: "9999px" },
-        },
-        sizes: {
-          formElement0: { value: `${sizes.formElementHeights[0]}px` },
-          formElement1: { value: `${sizes.formElementHeights[1]}px` },
-          formElement2: { value: `${sizes.formElementHeights[2]}px` },
-          avatar0: { value: `${sizes.avatars[0]}px` },
-          avatar1: { value: `${sizes.avatars[1]}px` },
-          avatar2: { value: `${sizes.avatars[2]}px` },
-          avatar3: { value: `${sizes.avatars[3]}px` },
-          avatar4: { value: `${sizes.avatars[4]}px` },
-          avatar5: { value: `${sizes.avatars[5]}px` },
-          avatar6: { value: `${sizes.avatars[6]}px` },
-          avatar7: { value: `${sizes.avatars[7]}px` },
-          avatar8: { value: `${sizes.avatars[8]}px` },
-          avatar9: { value: `${sizes.avatars[9]}px` },
-          icon0: { value: `${sizes.icons[0]}px` },
-          icon1: { value: `${sizes.icons[1]}px` },
-          icon2: { value: `${sizes.icons[2]}px` },
-          icon3: { value: `${sizes.icons[3]}px` },
-          icon4: { value: `${sizes.icons[4]}px` },
-          container: { value: "2000px" },
-          nav: { value: toPx(GLOBAL_NAV_HEIGHT) },
-        },
-        easings: {
-          ease: { value: transitions.ease },
-          expo: { value: transitions.expo },
-        },
-        durations: {
-          0: { value: toMs(motion.durations[0]) },
-          1: { value: toMs(motion.durations[1]) },
-          2: { value: toMs(motion.durations[2]) },
-          3: { value: toMs(motion.durations[3]) },
-        },
+        // letterSpacings: {
+        //   mono: { value: "0.0725em" },
+        //   [-1]: { value: `${typography.letterSpacings[-1] / 100}em` },
+        //   [-2]: { value: `${typography.letterSpacings[-2] / 100}em` },
+        //   [-3]: { value: `${typography.letterSpacings[-3] / 100}em` },
+        //   0: { value: `${typography.letterSpacings[0] / 100}em` },
+        //   [1]: { value: `${typography.letterSpacings[1] / 100}em` },
+        //   [2]: { value: `${typography.letterSpacings[2] / 100}em` },
+        //   [3]: { value: `${typography.letterSpacings[3] / 100}em` },
+        // },
+        // lineHeights: {
+        //   0: { value: typography.lineHeights[0] },
+        //   1: { value: typography.lineHeights[1] },
+        //   2: { value: typography.lineHeights[2] },
+        //   3: { value: typography.lineHeights[3] },
+        //   formElement0: { value: `${sizes.formElementHeights[0]}px` },
+        //   formElement1: { value: `${sizes.formElementHeights[1]}px` },
+        //   formElement2: { value: `${sizes.formElementHeights[2]}px` },
+        // },
+        // radii: {
+        //   0: { value: "0px" },
+        //   1: { value: onGridPx(1) },
+        //   2: { value: onGridPx(2) },
+        //   3: { value: onGridPx(3) },
+        //   4: { value: onGridPx(4) },
+        //   5: { value: onGridPx(5) },
+        //   6: { value: onGridPx(6) },
+        //   round: { value: "9999px" },
+        // },
+        // sizes: {
+        //   formElement0: { value: `${sizes.formElementHeights[0]}px` },
+        //   formElement1: { value: `${sizes.formElementHeights[1]}px` },
+        //   formElement2: { value: `${sizes.formElementHeights[2]}px` },
+        //   avatar0: { value: `${sizes.avatars[0]}px` },
+        //   avatar1: { value: `${sizes.avatars[1]}px` },
+        //   avatar2: { value: `${sizes.avatars[2]}px` },
+        //   avatar3: { value: `${sizes.avatars[3]}px` },
+        //   avatar4: { value: `${sizes.avatars[4]}px` },
+        //   avatar5: { value: `${sizes.avatars[5]}px` },
+        //   avatar6: { value: `${sizes.avatars[6]}px` },
+        //   avatar7: { value: `${sizes.avatars[7]}px` },
+        //   avatar8: { value: `${sizes.avatars[8]}px` },
+        //   avatar9: { value: `${sizes.avatars[9]}px` },
+        //   icon0: { value: `${sizes.icons[0]}px` },
+        //   icon1: { value: `${sizes.icons[1]}px` },
+        //   icon2: { value: `${sizes.icons[2]}px` },
+        //   icon3: { value: `${sizes.icons[3]}px` },
+        //   icon4: { value: `${sizes.icons[4]}px` },
+        //   container: { value: "2000px" },
+        //   nav: { value: toPx(GLOBAL_NAV_HEIGHT) },
+        // },
+        // easings: {
+        //   ease: { value: transitions.ease },
+        //   expo: { value: transitions.expo },
+        // },
+        // durations: {
+        //   0: { value: toMs(motion.durations[0]) },
+        //   1: { value: toMs(motion.durations[1]) },
+        //   2: { value: toMs(motion.durations[2]) },
+        //   3: { value: toMs(motion.durations[3]) },
+        // },
         // zIndex: {
         //   sheetPositionOverlay: {
         //     value: Z_INDEXES.sheetPositionOverlay,
@@ -253,27 +242,27 @@ export default defineConfig({
             value: `"SuisseMono", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace`,
           },
         },
-        fontSizes: {
-          0: { value: toPx(typography.fontSizes.body0) },
-          1: { value: toPx(typography.fontSizes.body1) },
-          2: { value: toPx(typography.fontSizes.body2) },
-          3: { value: toPx(typography.fontSizes.body3) },
-          4: { value: toPx(typography.fontSizes.body4) },
-          5: { value: toPx(typography.fontSizes.body5) },
-          6: { value: toPx(typography.fontSizes.body6) },
-          7: { value: toPx(typography.fontSizes.body7) },
-          8: { value: toPx(typography.fontSizes.body8) },
-          9: { value: toPx(typography.fontSizes.body9) },
-          10: { value: toPx(typography.fontSizes.body10) },
-          mono0: { value: toPx(typography.fontSizes.mono0) },
-          mono1: { value: toPx(typography.fontSizes.mono1) },
-          mono2: { value: toPx(typography.fontSizes.mono2) },
-          mono3: { value: toPx(typography.fontSizes.mono3) },
-          mono4: { value: toPx(typography.fontSizes.mono4) },
-          mono5: { value: toPx(typography.fontSizes.mono5) },
-          mono6: { value: toPx(typography.fontSizes.mono6) },
-          mono7: { value: toPx(typography.fontSizes.mono7) },
-        },
+        // fontSizes: {
+        //   0: { value: toPx(typography.fontSizes.body0) },
+        //   1: { value: toPx(typography.fontSizes.body1) },
+        //   2: { value: toPx(typography.fontSizes.body2) },
+        //   3: { value: toPx(typography.fontSizes.body3) },
+        //   4: { value: toPx(typography.fontSizes.body4) },
+        //   5: { value: toPx(typography.fontSizes.body5) },
+        //   6: { value: toPx(typography.fontSizes.body6) },
+        //   7: { value: toPx(typography.fontSizes.body7) },
+        //   8: { value: toPx(typography.fontSizes.body8) },
+        //   9: { value: toPx(typography.fontSizes.body9) },
+        //   10: { value: toPx(typography.fontSizes.body10) },
+        //   mono0: { value: toPx(typography.fontSizes.mono0) },
+        //   mono1: { value: toPx(typography.fontSizes.mono1) },
+        //   mono2: { value: toPx(typography.fontSizes.mono2) },
+        //   mono3: { value: toPx(typography.fontSizes.mono3) },
+        //   mono4: { value: toPx(typography.fontSizes.mono4) },
+        //   mono5: { value: toPx(typography.fontSizes.mono5) },
+        //   mono6: { value: toPx(typography.fontSizes.mono6) },
+        //   mono7: { value: toPx(typography.fontSizes.mono7) },
+        // },
 
         colors: {
           // Temporarily using this until the color system is ready
@@ -359,68 +348,68 @@ export default defineConfig({
             },
           },
 
-          shade: {
-            0: {
-              value: colors.black[0],
-            },
-            1: {
-              value: colors.black[1],
-            },
-            2: {
-              value: colors.black[2],
-            },
-            3: {
-              value: colors.black[3],
-            },
-            4: {
-              value: colors.black[4],
-            },
-            5: {
-              value: colors.black[5],
-            },
-            10: {
-              value: colors.black[10],
-            },
-            15: {
-              value: colors.black[15],
-            },
-            20: {
-              value: colors.black[20],
-            },
-            25: {
-              value: colors.black[25],
-            },
-            30: {
-              value: colors.black[30],
-            },
-            35: {
-              value: colors.black[35],
-            },
-            40: {
-              value: colors.black[40],
-            },
-            45: {
-              value: colors.black[45],
-            },
-            50: {
-              value: colors.black[50],
-            },
-            60: {
-              value: colors.black[60],
-            },
-            70: {
-              value: colors.black[70],
-            },
-            80: {
-              value: colors.black[80],
-            },
-            90: {
-              value: colors.black[90],
-            },
-            100: {
-              value: colors.black[100],
-            },
-          },
+          // shade: {
+          //   0: {
+          //     value: colors.black[0],
+          //   },
+          //   1: {
+          //     value: colors.black[1],
+          //   },
+          //   2: {
+          //     value: colors.black[2],
+          //   },
+          //   3: {
+          //     value: colors.black[3],
+          //   },
+          //   4: {
+          //     value: colors.black[4],
+          //   },
+          //   5: {
+          //     value: colors.black[5],
+          //   },
+          //   10: {
+          //     value: colors.black[10],
+          //   },
+          //   15: {
+          //     value: colors.black[15],
+          //   },
+          //   20: {
+          //     value: colors.black[20],
+          //   },
+          //   25: {
+          //     value: colors.black[25],
+          //   },
+          //   30: {
+          //     value: colors.black[30],
+          //   },
+          //   35: {
+          //     value: colors.black[35],
+          //   },
+          //   40: {
+          //     value: colors.black[40],
+          //   },
+          //   45: {
+          //     value: colors.black[45],
+          //   },
+          //   50: {
+          //     value: colors.black[50],
+          //   },
+          //   60: {
+          //     value: colors.black[60],
+          //   },
+          //   70: {
+          //     value: colors.black[70],
+          //   },
+          //   80: {
+          //     value: colors.black[80],
+          //   },
+          //   90: {
+          //     value: colors.black[90],
+          //   },
+          //   100: {
+          //     value: colors.black[100],
+          //   },
+          // },
         },
 
         shadows: {

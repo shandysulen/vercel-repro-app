@@ -146,7 +146,7 @@ export interface UtilityValues {
 	transitionDuration: Tokens["durations"];
 	transition: "all" | "common" | "background" | "colors" | "opacity" | "shadow" | "transform";
 	animation: Tokens["animations"];
-	animationName: "spin" | "ping" | "pulse" | "bounce" | "fadeInDown" | "fadeInUp" | "blink" | "followPath" | "landingSection4" | "pulseDotScale" | "pulseBgScale" | "pulseOuter" | "snake";
+	animationName: "spin" | "ping" | "pulse" | "bounce" | "blink" | "followPath" | "landingSection4" | "pulseDotScale" | "pulseBgScale" | "pulseOuter" | "snake";
 	animationTimingFunction: Tokens["easings"];
 	animationDuration: Tokens["durations"];
 	animationDelay: Tokens["durations"];
@@ -200,7 +200,7 @@ export interface UtilityValues {
 	debug: boolean;
 	containerName: CssProperties["containerName"];
 	size: Tokens["spacing"];
-	colorPalette: "current" | "white" | "transparent" | "rose" | "pink" | "fuchsia" | "purple" | "violet" | "indigo" | "blue" | "sky" | "cyan" | "teal" | "emerald" | "green" | "lime" | "yellow" | "amber" | "orange" | "red" | "neutral" | "stone" | "zinc" | "gray" | "slate" | "black" | "shade";
+	colorPalette: "current" | "white" | "transparent" | "rose" | "pink" | "fuchsia" | "purple" | "violet" | "indigo" | "blue" | "sky" | "cyan" | "teal" | "emerald" | "green" | "lime" | "yellow" | "amber" | "orange" | "red" | "neutral" | "stone" | "zinc" | "gray" | "slate" | "black";
 	textStyle: "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | "3xl" | "4xl" | "5xl" | "6xl" | "7xl" | "8xl" | "9xl";
 }
 

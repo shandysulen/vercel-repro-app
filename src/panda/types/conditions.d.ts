@@ -188,88 +188,54 @@ export interface Conditions {
 	"_standalone": string
 	/** `@media screen and (min-width: 40rem)` */
 	"sm": string
-	/** `@media screen and (min-width: 40rem) and (max-width: 51.9975rem)` */
+	/** `@media screen and (min-width: 40rem) and (max-width: 47.9975rem)` */
 	"smOnly": string
 	/** `@media screen and (max-width: 39.9975rem)` */
 	"smDown": string
-	/** `@media screen and (min-width: 52rem)` */
+	/** `@media screen and (min-width: 48rem)` */
 	"md": string
-	/** `@media screen and (min-width: 52rem) and (max-width: 63.9975rem)` */
+	/** `@media screen and (min-width: 48rem) and (max-width: 63.9975rem)` */
 	"mdOnly": string
-	/** `@media screen and (max-width: 51.9975rem)` */
+	/** `@media screen and (max-width: 47.9975rem)` */
 	"mdDown": string
 	/** `@media screen and (min-width: 64rem)` */
 	"lg": string
-	/** `@media screen and (min-width: 64rem) and (max-width: 71.9975rem)` */
+	/** `@media screen and (min-width: 64rem) and (max-width: 79.9975rem)` */
 	"lgOnly": string
 	/** `@media screen and (max-width: 63.9975rem)` */
 	"lgDown": string
-	/** `@media screen and (min-width: 72rem)` */
-	"xl": string
-	/** `@media screen and (min-width: 72rem) and (max-width: 79.9975rem)` */
-	"xlOnly": string
-	/** `@media screen and (max-width: 71.9975rem)` */
-	"xlDown": string
 	/** `@media screen and (min-width: 80rem)` */
-	"2xl": string
-	/** `@media screen and (min-width: 80rem) and (max-width: 92.31rem)` */
-	"2xlOnly": string
+	"xl": string
+	/** `@media screen and (min-width: 80rem) and (max-width: 95.9975rem)` */
+	"xlOnly": string
 	/** `@media screen and (max-width: 79.9975rem)` */
+	"xlDown": string
+	/** `@media screen and (min-width: 96rem)` */
+	"2xl": string
+	/** `@media screen and (min-width: 96rem)` */
+	"2xlOnly": string
+	/** `@media screen and (max-width: 95.9975rem)` */
 	"2xlDown": string
-	/** `@media screen and (min-width: 92.3125rem)` */
-	"3xl": string
-	/** `@media screen and (min-width: 92.3125rem) and (max-width: 99.9975rem)` */
-	"3xlOnly": string
-	/** `@media screen and (max-width: 92.31rem)` */
-	"3xlDown": string
-	/** `@media screen and (min-width: 100rem)` */
-	"4xl": string
-	/** `@media screen and (min-width: 100rem)` */
-	"4xlOnly": string
-	/** `@media screen and (max-width: 99.9975rem)` */
-	"4xlDown": string
-	/** `@media screen and (min-width: 40rem) and (max-width: 51.9975rem)` */
+	/** `@media screen and (min-width: 40rem) and (max-width: 47.9975rem)` */
 	"smToMd": string
 	/** `@media screen and (min-width: 40rem) and (max-width: 63.9975rem)` */
 	"smToLg": string
-	/** `@media screen and (min-width: 40rem) and (max-width: 71.9975rem)` */
-	"smToXl": string
 	/** `@media screen and (min-width: 40rem) and (max-width: 79.9975rem)` */
+	"smToXl": string
+	/** `@media screen and (min-width: 40rem) and (max-width: 95.9975rem)` */
 	"smTo2xl": string
-	/** `@media screen and (min-width: 40rem) and (max-width: 92.31rem)` */
-	"smTo3xl": string
-	/** `@media screen and (min-width: 40rem) and (max-width: 99.9975rem)` */
-	"smTo4xl": string
-	/** `@media screen and (min-width: 52rem) and (max-width: 63.9975rem)` */
+	/** `@media screen and (min-width: 48rem) and (max-width: 63.9975rem)` */
 	"mdToLg": string
-	/** `@media screen and (min-width: 52rem) and (max-width: 71.9975rem)` */
+	/** `@media screen and (min-width: 48rem) and (max-width: 79.9975rem)` */
 	"mdToXl": string
-	/** `@media screen and (min-width: 52rem) and (max-width: 79.9975rem)` */
+	/** `@media screen and (min-width: 48rem) and (max-width: 95.9975rem)` */
 	"mdTo2xl": string
-	/** `@media screen and (min-width: 52rem) and (max-width: 92.31rem)` */
-	"mdTo3xl": string
-	/** `@media screen and (min-width: 52rem) and (max-width: 99.9975rem)` */
-	"mdTo4xl": string
-	/** `@media screen and (min-width: 64rem) and (max-width: 71.9975rem)` */
-	"lgToXl": string
 	/** `@media screen and (min-width: 64rem) and (max-width: 79.9975rem)` */
+	"lgToXl": string
+	/** `@media screen and (min-width: 64rem) and (max-width: 95.9975rem)` */
 	"lgTo2xl": string
-	/** `@media screen and (min-width: 64rem) and (max-width: 92.31rem)` */
-	"lgTo3xl": string
-	/** `@media screen and (min-width: 64rem) and (max-width: 99.9975rem)` */
-	"lgTo4xl": string
-	/** `@media screen and (min-width: 72rem) and (max-width: 79.9975rem)` */
+	/** `@media screen and (min-width: 80rem) and (max-width: 95.9975rem)` */
 	"xlTo2xl": string
-	/** `@media screen and (min-width: 72rem) and (max-width: 92.31rem)` */
-	"xlTo3xl": string
-	/** `@media screen and (min-width: 72rem) and (max-width: 99.9975rem)` */
-	"xlTo4xl": string
-	/** `@media screen and (min-width: 80rem) and (max-width: 92.31rem)` */
-	"2xlTo3xl": string
-	/** `@media screen and (min-width: 80rem) and (max-width: 99.9975rem)` */
-	"2xlTo4xl": string
-	/** `@media screen and (min-width: 92.3125rem) and (max-width: 99.9975rem)` */
-	"3xlTo4xl": string
 	/** `@container  (min-width: 20rem)` */
 	"@/xs": string
 	/** `@container  (min-width: 24rem)` */
